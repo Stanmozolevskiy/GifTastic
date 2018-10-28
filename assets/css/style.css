@@ -4,7 +4,7 @@ body {
     background-size: cover;
     height: 100%;
     overflow-x: hidden;
-    
+    text-align: center;
 }
 
 /* input fild */
@@ -39,29 +39,49 @@ body {
     font-size: 20px;
     color: white;
 }
-
-/* Gifs */
-
-#gifs-appear-here{
-    text-align: center;
-}
 button:focus {
     text-decoration: none;
     outline:none;
     border: none;
     box-shadow: none;
   }
-
-button:hover{
+  button:hover{
     cursor:pointer;
     overflow: hidden;
 }
 
-.gif-image{
-    width: 200px;;
-    height: 200px;;
-    border-radius: 40%
+/* Gifs */
+
+#gifs-appear-here{
+    text-align: center;
 }
-.paiting-text{
-    color: white;
+
+.card-img-top{
+    width: 200px;
+    height: 200px;;
+    border-radius: 60%;
+}
+img:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+}
+.card-img-top:hover{
+   animation: stpo;
+   background-color: aliceblue;
+}
+.card-footer{
+    padding: 0;
+    background-color:rgba(255,255,255,0.4); 
+}
+.card-footer p {
+    color: black;
+    padding: 0;
+    margin: 0;  
+}
+.card{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    background-color:rgba(255,255,255,0.1);
+    display: inline-block;
 }
