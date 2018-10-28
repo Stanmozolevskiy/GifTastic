@@ -56,3 +56,12 @@ button:hover{
     cursor:pointer;
     overflow: hidden;
 }
+
+.gif-image{
+    width: 200px;;
+    height: 200px;;
+    border-radius: 40%
+}
+.paiting-text{
+    color: white;
+}

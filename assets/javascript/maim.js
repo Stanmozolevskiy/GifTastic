@@ -16,10 +16,9 @@ $("#buttons-for-gifs").append(newGifDiv)
 
 
 
-$(".redyButton").on("click", function () {
+$(document).on("click",".redyButton", function () {
 
     var gif = $(this).attr("data-gif");
-
     var newGif = $("#input-for-gif").val().trim()
     console.log(newGif)
 
@@ -31,7 +30,7 @@ $(".redyButton").on("click", function () {
         method: "GET"
     })
         .then(function (response) {
-            
+
             // Storing an array of results in the results variable
             var results = response.data;
 
@@ -48,20 +47,23 @@ $(".redyButton").on("click", function () {
 
                     // Creating a paragraph tag with the result item's rating
                     var p = $("<p>").text("Rating: " + rating);
+                    p.attr("class", "paiting-text")
 
                     // Creating an image tag
-                    var gifImageImage = $("<img>");
+                    var gifImage = $("<img>");
+                     gifImage.attr("class", "gif-image")
+                     gifImage.attr("gifurl", results[i].images.fixed_height.url);
 
                     // Giving the image tag an src attribute of a proprty pulled off the
                     // result item
-                    gifImageImage.attr("src", results[i].images.fixed_height.url);
+                    gifImage.attr("src", results[i].images.fixed_height.url);
 
-                    // Appending the paragraph and gifImageImage we created to the "gifDiv" div we created
+                    // Appending the paragraph and gifImage we created to the "gifDiv" div we created
                     gifDiv.append(p);
-                    gifDiv.append(gifImageImage);
+                    gifDiv.append(gifImage);
 
                     // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
-                    $("#gifs-appear-here").prepend(gifDiv);
+                    $("#gifs-appear-here").prepend(gifDiv)
                 }
 
             }
