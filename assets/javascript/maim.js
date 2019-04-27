@@ -1,3 +1,5 @@
+//Show default gifs "Rackoon"
+$( document ).ready(showGif($("#default")))
 // Adding new button on screen
 function newCard() {
     if ($("#input-for-gif").val().length > 0) {
@@ -48,7 +50,6 @@ $(document).on('keyup', function (e) {
         newCard()
     }
 });
-
 // event handler for klicking on button
 $(document).on("click", '.redyButton', function () { showGif($(this)) })
 
