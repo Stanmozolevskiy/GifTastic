@@ -1,61 +1,43 @@
-
-body {
-    background: url(../images/Aladdin-Bread.jpg) no-repeat center center fixed; 
-    background-size: cover;
-    height: 100%;
-    overflow-x: hidden;
-    text-align: center;
+body { 
+    background: #f2f2f2;
+    color: black;
 }
-
-/* input fild */
-.input-group{
-    margin-top: 2%;
-    margin-left: 40%;
-    margin-right: 40%;
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+.btn{
+    margin:3px;
 }
-.input-group button{
-    color: white;
-    border: none;
-    font-size: 20px;
-    background-color:Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    overflow: hidden; 
-}
-
+.input-ui{
+     margin-top: 40px;
+     text-align: center;
+ }
 /* Gif buttons */
 #buttons-for-gifs {
-    margin-top: 5%;
-    text-align: center;
+    margin: 10px 10px 10px 10px;
     background-color:Transparent;
     background-repeat:no-repeat;
     border: none;
     overflow: hidden; 
 }
-#buttons-for-gifs button {
-    background-color:Transparent;
-    border: none;
-    overflow: hidden; 
-    font-size: 20px;
-    color: white;
+#addNewButton{
+    vertical-align: baseline;
 }
 button:focus {
     text-decoration: none;
     outline:none;
     border: none;
     box-shadow: none;
-  }
-  button:hover{
+}
+button:hover{
     cursor:pointer;
     overflow: hidden;
 }
-
 /* Gifs */
-
 #gifs-appear-here{
     text-align: center;
 }
-
 .card-img-top{
     width: 200px;
     height: 200px;;
@@ -64,10 +46,6 @@ button:focus {
 img:hover{
     cursor: pointer;
     background-color: aliceblue;
-}
-.card-img-top:hover{
-   animation: stpo;
-   background-color: aliceblue;
 }
 .card-footer p {
     color: black;

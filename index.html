@@ -14,47 +14,56 @@
     </head>
 
     <body>
+        <div class="pricing-header px-3 py-3 pb-md-4 mx-auto text-center display-4">Gif Trafic</div>
         <div id="buttons-for-gifs">
-            <button class="redyButton" data-gif="Princess Jasmine">
-                Princess Jasmine
+            <button class="redyButton btn btn-info" data-gif="Hey, hey... Ohhh.">
+                    Hey, hey... Ohhh.
             </button>
-            <button class="redyButton" data-gif="The Genie">
-                The Genie
+            <button class="redyButton btn btn-info" data-gif="Mind Blown">
+                    Mind Blown
             </button>
-            <button class="redyButton" data-gif="Jafar">
-                Jafar
+            <button class="redyButton btn btn-info" data-gif="Sarcastic">
+                    Sarcastic
             </button>
-            <button class="redyButton" data-gif="Iago">
-                Iago
+            <button class="redyButton btn btn-info" data-gif="proud of yourself">
+                    Proud of Yourself
             </button>
-            <button class="redyButton" data-gif="Abu">
-                Abu
+            <button class="redyButton btn btn-info" data-gif="Enough Internet">
+                    Enough Internet
             </button>
-            <button class="redyButton" data-gif="Magic Carpet">
-                Magic Carpet
+            <button class="redyButton btn btn-info" data-gif="Magic Carpet">
+                    Magic Carpet
             </button>
-            <button class="redyButton" data-gif="Aziz">
-                Aziz
+            <button class="redyButton btn btn-info" data-gif="thumbs down">
+                    Thumbs down
             </button>
-            <button class="redyButton" data-gif="The Sultan">
-                The Sultan
+            <button class="redyButton btn btn-info" data-gif="can’t believe">
+                    Can’t believe
             </button>
-            <button class="redyButton" data-gif="Farouk">
-                Farouk
+            <button class="redyButton btn btn-info" data-gif="Cat">
+                    Cat
             </button>
-            <button class="redyButton" data-gif="Aladdin">
-                Aladdin
+            <button class="redyButton btn btn-info" data-gif="kitten">
+                    Kitten
+            </button>
+            <button class="redyButton btn btn-info" data-gif="puppy">
+                    Puppy
+            </button>
+            <button class="redyButton btn btn-info" data-gif="Rackoon">
+                    Rackoon
             </button>
         </div>
 
-        <div class="input-group">
-            <input class="custom" id="input-for-gif" placeholder="Pick a gif" type="text">
-            <div class="input-group-append">
-                <button id="addNewButton" class="button" type="button">Add new button</button>
+        <div class="row">
+            <div id="gifs-appear-here" class="col-8"> </div>
+            <div class="col-4">
+                <div class="input-ui">
+                <input id="input-for-gif" placeholder="Pick a gif" type="text">
+                <button id="addNewButton" class="btn btn-info" type="button">Add new button</button>
+                </div>
+            </div>
             </div>
         </div>
-
-        <div id="gifs-appear-here"> </div>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
