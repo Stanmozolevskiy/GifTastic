@@ -2,6 +2,9 @@ body {
     background: #f2f2f2;
     color: black;
 }
+:root{
+    --blur: 5px;
+}
 .btn:focus,.btn:active {
     outline: none !important;
     box-shadow: none;
@@ -41,7 +44,11 @@ button:hover{
 .card-img-top{
     width: 200px;
     height: 200px;;
-    border-radius: 60%;   
+    border-radius: 60%;
+    
+}
+.hl{
+    filter: blur(var(--blur))
 }
 img:hover{
     cursor: pointer;
