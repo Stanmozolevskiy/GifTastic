@@ -1,5 +1,5 @@
 //Show default gifs "Rackoon"
-$(document).ready(showGif($("#default")))
+// $(document).ready(showGif($("#default")))
 // Adding new button on screen
 function newCard() {
     if ($("#input-for-gif").val().length > 0) {
