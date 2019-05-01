@@ -39,36 +39,15 @@ function showGif(buttonData) {
                 $("#gifs-appear-here").prepend(gifDiv)
             }
         }).then(() => {
-            //
-            // //manipulate with input
-            // const blurnput = document.getElementById('blur');
-            // const output = document.querySelectorAll('img');
-            // const blur = 'filter: blur()'
-            const inputs = document.querySelectorAll(' input')
-            console.log(inputs)
+            //updating the ui using css variables var(--blur)
+            const inputs = document.querySelectorAll('input')
             function handleUpdates() {
                 const sufix = "px"
-                console.log(this.name)
                 document.documentElement.style.setProperty(`--${this.name}`, this.value + sufix)
             }
-            inputs.forEach(input => input.addEventListener('change',handleUpdates ))
-            inputs.forEach(input => input.addEventListener('mousemove',handleUpdates ))
-            // // go throught all selected images (need to fing more productive way)
-            // console.log(blurnput)
-            // for (let i = 0; i < output.length; i++) {
+            inputs.forEach(input => input.addEventListener('change', handleUpdates))
+            inputs.forEach(input => input.addEventListener('mousemove', handleUpdates))
 
-            //     function setDefaultState() {
-            //         output[i].style.blur = blurnput.value + 'px';
-            //         console.log(output[i].style.blur)
-
-            //     }
-            //     document.addEventListener('change', function () {
-            //         setDefaultState();
-            //     });
-            //     // document.addEventListener('mousemove', function () {
-            //     //     setDefaultState();
-            //     // });
-            // }
         })
         .catch(function (error) {
             console.log(error);
