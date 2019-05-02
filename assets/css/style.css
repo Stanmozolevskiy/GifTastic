@@ -4,6 +4,7 @@ body {
 }
 :root{
     --blur: 0.3px;
+    --border: 60%;
 }
 .btn:focus,.btn:active {
     outline: none !important;
@@ -44,11 +45,10 @@ button:hover{
 .card-img-top{
     width: 200px;
     height: 200px;;
-    border-radius: 60%;
-    
-}
-.hl{
-    filter: blur(var(--blur))
+    border-radius: var(--border);
+  }
+  .hl{  
+  filter: blur(var(--blur));
 }
 img:hover{
     cursor: pointer;
@@ -67,7 +67,7 @@ img:hover{
     border: none;
     display: inline-block;
 }
-/*  */
+/* The ccs for the range input */
 input[type=range] {
   -webkit-appearance: none;
   margin: 18px 0;
@@ -80,7 +80,6 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
-  animate: 0.2s;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   background: #3071a9;
   border-radius: 1.3px;

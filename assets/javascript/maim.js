@@ -39,10 +39,10 @@ function showGif(buttonData) {
                 $("#gifs-appear-here").prepend(gifDiv)
             }
         }).then(() => {
-            //updating the ui using css variables var(--blur)
+            //updating the ui using css variables var(--blur) and var(--contrast)
             const inputs = document.querySelectorAll('input')
             function handleUpdates() {
-                const sufix = "px"
+                const sufix = (this.dataset.sufix)
                 document.documentElement.style.setProperty(`--${this.name}`, this.value + sufix)
             }
             inputs.forEach(input => input.addEventListener('change', handleUpdates))
