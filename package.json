@@ -1,0 +1,24 @@
+{
+  "name": "GifTastic",
+  "version": "1.0.0",
+  "description": "https://stanmozolevskiy.github.io/GifTastic/index.html",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^24.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stanmozolevskiy/GifTastic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stanmozolevskiy/GifTastic/issues"
+  },
+  "homepage": "https://github.com/Stanmozolevskiy/GifTastic#readme"
+}
