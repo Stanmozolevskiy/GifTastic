@@ -3,4 +3,4 @@
 
 https://stanmozolevskiy.github.io/GifTastic/index.html
 
-![app image](gif.png)
+![app image](GifTrafic.png)
