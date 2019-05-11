@@ -4,11 +4,12 @@
   "description": "https://stanmozolevskiy.github.io/GifTastic/index.html",
   "main": "index.js",
   "dependencies": {
-    "jest": "^24.7.1"
+    "jest": "^24.7.1",
+    "testcafe": "^1.1.3"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jest"
+    "test": "testcafe chrome:headless assets/javascript/main.test.js"
   },
   "repository": {
     "type": "git",
