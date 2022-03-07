@@ -1,0 +1,84 @@
+
+<div class="box" style="background-color: rgb(32, 30, 30)">
+  <div class="container">
+   
+    <div class="row">
+      <div class="container">
+        <div class="row height d-flex justify-content-center align-items-center">
+          <div class="col-md-1"></div>
+          <div class="col-md-11">
+                <div class="search"> 
+                    <form [formGroup]="serchForm" class="form" (ngSubmit)="onSubmit()">
+                      <i class="fa fa-search"></i> 
+                      <input type="text" class="form-control" formControlName="search"  placeholder="Have a question? Ask Now">
+                      <button class="btn btn-primary" type="submit">Search</button> 
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </div>
+      <div class="col-md-3">
+        <div class="Container-sc-1p1ocz2 cKPoSH">
+          <div class="Header-sc-qd78b4 krXIsJ">
+            <img style="height:auto; max-width: 250px;" src="../assets/bird-wings-flying-feature.gif">
+            <a href="/sports">
+              <div class="Avatar-sc-94lmf3 drGXSQ" style="background-image: url('../assets/bird-wings-flying-feature.gif');">
+              </div>
+            </a>
+            <div>
+
+            </div>
+          </div>
+          <div class="DescriptionContainer-sc-1doqed5 eBNZAK">
+            <p class="Bio-sc-1f1vyip hcKekU">Your go-to for any and all sports GIFs! LeBron, Ronaldo, Gronk, Serena...We’ve got them all!</p>
+            
+          </div>
+          <div>
+            <div class="ActionsDiv-sc-11p6j00 lfRXFx"></div>
+            <form   [formGroup]="serchForm" class="form" (ngSubmit)="onSubmit()" class="SearchForm-sc-1xypcd4 gmhAOj">
+              <input  formControlName="search"  type="text"  placeholder="Search Sports GIFs " class="SearchInput-sc-1p3sw8i iVRYNr" >
+            </form>
+          </div>
+        </div>
+
+        <div class="_2Pxxs0y1Aq3Q5pm_TDSS55">
+          <div>
+            <div>
+            </div>
+            <h2 class="_3R9b0sn9txKGSHOkCc-M7y _1KuKUOaTOA-MDxUbnxAF0-">Trending Now</h2>
+          </div>
+          <ul class="_1PTOQWiBTpe_SqrQWf_jP_">
+            <li>
+              <a class="_2BCuvfYtG06PjIyqeyaKGf _24FzDJPN-XRYjYbFAR25Py" id="cat" (click)="onClick($event)">#cat</a>
+            </li>
+            <li>
+              <a class="_2BCuvfYtG06PjIyqeyaKGf _24FzDJPN-XRYjYbFAR25Py" id="reaction" (click)="onClick($event)">#reaction</a>
+            </li>
+            <li>
+              <a class="_2BCuvfYtG06PjIyqeyaKGf _24FzDJPN-XRYjYbFAR25Py"  id="no way" (click)="onClick($event)">#no way</a>
+            </li>
+            <li>
+              <a class="_2BCuvfYtG06PjIyqeyaKGf _24FzDJPN-XRYjYbFAR25Py" id="cute baby" (click)="onClick($event)">#cute baby</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="col-md-9">
+        <div class="row">  
+            <section id="photos">
+
+              <div *ngFor="let gif of data">
+                
+                <div *ngIf="!gif" class="text-center">
+                  <div class="spinner-border text-light" role="status"></div>
+                </div>
+
+                <img *ngIf="gif.media[0].gif.url" src="{{gif.media[0].tinygif.url}}">
+              </div>
+            </section>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
